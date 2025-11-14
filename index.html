@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maths Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="game-card">
+    <h2 class="title">Maths Game</h2>
+
+    <div class="top-row">
+        <span class="question-count">Question: <span id="current">1</span>/10</span>
+        <span class="score">Score: <span id="score">0</span></span>
+    </div>
+
+    <div class="progress-bar">
+        <div id="progress"></div>
+    </div>
+
+    <div class="question-box">
+        <span id="question">Question appears here</span>
+        <span id="timer">30s</span>
+    </div>
+
+    <h4 class="choose-text">Choose the correct one:</h4>
+
+    <div class="options">
+        <button class="option" onclick="selectAnswer(this)" id="opt1"></button>
+        <button class="option" onclick="selectAnswer(this)" id="opt2"></button>
+        <button class="option" onclick="selectAnswer(this)" id="opt3"></button>
+        <button class="option" onclick="selectAnswer(this)" id="opt4"></button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
